@@ -1,0 +1,13 @@
+.container {
+  /* background-color: red; */
+  display: flex;
+  margin: 0;
+}
+.left {
+  height: 100vh;
+  flex: 1;
+}
+.right {
+  height: 100vh;
+  flex: 1;
+}
