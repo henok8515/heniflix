@@ -1,13 +1,14 @@
 import React from "react";
 import "./homepage.css";
-import Card from "../../../components/Card";
 import Link from "next/link";
+import Header from "@/app/components/Header";
 
 const HomePage = () => {
   return (
-    <div>
-      <Link href="/pages/programs/Movies">Movies</Link>
-      <Link href="/pages/programs/tvshow">Tv shows</Link>
+    <div className="flex flex-col">
+      <Header />
+      {/* <Link href="/pages/programs/Movies">Movies</Link>
+      <Link href="/pages/programs/tvshow">Tv shows</Link> */}
     </div>
   );
 };

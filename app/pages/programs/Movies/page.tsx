@@ -1,10 +1,12 @@
 import React from "react";
-import Movie from "./Movie";
+import Movies from "./Movies";
+import Header from "@/app/components/Header";
 
 const page = () => {
   return (
     <div>
-      <Movie />
+      <Header />
+      <Movies />
     </div>
   );
 };

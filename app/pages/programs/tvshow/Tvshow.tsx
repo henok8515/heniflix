@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../../../components/Card";
+import { Typography } from "@mui/material";
 
 const Tvshow = async () => {
   const url = "https://movies-api14.p.rapidapi.com/shows";
@@ -18,6 +19,8 @@ const Tvshow = async () => {
 
     return (
       <div className="h-screen flex justify-center items-center   flex-wrap">
+        <Typography variant="h2">Tv Shows</Typography>
+
         <div className="flex w-full flex-wrap justify-center items-center">
           {data.map((name: any) => (
             <Card name={name} key={name._id} />

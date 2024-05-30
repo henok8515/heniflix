@@ -1,13 +1,12 @@
 import React from "react";
 import Tvshow from "./Tvshow";
 import Link from "next/link";
+import Header from "@/app/components/Header";
 
 const pages = () => {
   return (
-    <div>
-      <Link href="/pages/programs/home">go back</Link>
-      <p>Tv shows</p>
-
+    <div className="">
+      <Header />
       <Tvshow />
     </div>
   );

@@ -2,6 +2,8 @@ import React from "react";
 import Card from "../../../components/Card";
 import Link from "next/link";
 
+import { Typography } from "@mui/material";
+
 const Movie = async () => {
   const url = "https://movies-api14.p.rapidapi.com/movies";
   const options = {
@@ -19,7 +21,8 @@ const Movie = async () => {
 
     return (
       <div className="h-screen flex justify-center items-center   flex-wrap">
-        <Link href="/pages/programs/home">go back</Link>
+        {/* <Link href="/pages/programs/home">go back</Link> */}
+        <Typography variant="h2">Movies</Typography>
 
         <div className="flex w-full flex-wrap justify-center items-center">
           {data.map((name: any) => (
